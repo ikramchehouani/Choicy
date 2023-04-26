@@ -1354,14 +1354,14 @@ label {
 .hero::before {
     top: 0;
     height: 159px;
-    background-image: url("../images/hero-bg-top.svg");
+    background-image: url("../images/main_cool_top.svg");
     background-size: 720px 159px
 }
 
 .hero::after {
     bottom: 42%;
     height: 173px;
-    background-image: url("../images/hero-bg-bottom.svg");
+    background-image: url("../images/main_cool_bottom.svg");
     background-size: 720px 173px
 }
 
@@ -1523,6 +1523,16 @@ label {
     margin: 0 auto;
     z-index: 1
 }
+
+@media (max-width: 641px) {
+
+    device-mockup ,
+    .device-mockup {
+        width: 400px;
+    }
+}
+
+
 
 .has-animations .features-extended {
     opacity: 0
@@ -1725,7 +1735,7 @@ main {
     left: calc(50% - 360px);
     width: 720px;
     height: 291px;
-    background-image: url("../images/footer-bg.svg");
+    background-image: url("../images/footer_cool.svg");
     background-size: 720px 291px;
     background-repeat: no-repeat
 }
