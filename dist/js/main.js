@@ -74,23 +74,23 @@
       }
     }
   
-    Bubble.prototype.randomise = function () {
-      let self = this
-      self.colors = ['153,147,255', '97,42,140', '173,189,252', '234,234,234', '188, 201, 255', '173,154,199']
-      self.velocity = 30 // Bubble levitation velocity (the higher the slower)
-      self.smoothFactor = 50 // The higher, the smoother
-      self.staticity = 30 // Increase value to make bubbles move slower on mousemove
-      self.magnetism = 0.1 + Math.random() * 4
-      self.color = self.colors[Math.floor(Math.random() * self.colors.length)]
-      self.alpha = self.generateDecimalBetween(5, 10) / 10
-      self.size = self.generateDecimalBetween(1, 4)
-      self.posX = 0
-      self.posY = 0
-      self.movementX = self.generateDecimalBetween(-2, 2) / self.velocity
-      self.movementY = self.generateDecimalBetween(1, 20) / self.velocity
-      self.translateX = self.generateDecimalBetween(0, self.canvasWidth)
-      self.translateY = self.generateDecimalBetween(0, self.canvasHeight)
-    }
+    // Bubble.prototype.randomise = function () {
+    //   let self = this
+    //   self.colors = ['153,147,255', '97,42,140', '173,189,252', '234,234,234', '188, 201, 255', '173,154,199']
+    //   self.velocity = 30 // Bubble levitation velocity (the higher the slower)
+    //   self.smoothFactor = 50 // The higher, the smoother
+    //   self.staticity = 30 // Increase value to make bubbles move slower on mousemove
+    //   self.magnetism = 0.1 + Math.random() * 4
+    //   self.color = self.colors[Math.floor(Math.random() * self.colors.length)]
+    //   self.alpha = self.generateDecimalBetween(5, 10) / 10
+    //   self.size = self.generateDecimalBetween(1, 4)
+    //   self.posX = 0
+    //   self.posY = 0
+    //   self.movementX = self.generateDecimalBetween(-2, 2) / self.velocity
+    //   self.movementY = self.generateDecimalBetween(1, 20) / self.velocity
+    //   self.translateX = self.generateDecimalBetween(0, self.canvasWidth)
+    //   self.translateY = self.generateDecimalBetween(0, self.canvasHeight)
+    // }
   
     let Background = function (selector) {
       let self = this
